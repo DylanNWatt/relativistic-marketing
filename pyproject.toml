@@ -3,6 +3,6 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "eelativistic_eocs"
+name = "relativistic_eocs"
 authors = [{name = "Dylan Watt", email = "dylan@kadre.io"}]
 dynamic = ["version", "description"]
