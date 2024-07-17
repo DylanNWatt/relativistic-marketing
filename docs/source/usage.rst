@@ -6,17 +6,26 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+While the long term goal for Relativistic is to provide a stable module api for terraform projects to be able to import, the current version is designed as a boilerplate.
 
+The suggested usage is to fork the repository and modify the code to suit your needs.
+
+Assuming you have the github CLI installed, you can run the following command to create a new repository from the template:
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   $ gh repo fork kadreio/relativistic
 
-Creating recipes
+Deploying Locally
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+Relativistic's purpose can be summed up as "you give us a kubernetes cluster, and we'll give you a data stack." It does not concern itself with the actual creation of that cluster.
+
+As such, you'll need to create a kubernetes cluster for local development. There are several projects out that that do this.
+
+As recommendations, but not requirements:
+
+- For Linux: [Minikube](https://minikube.sigs.k8s.io/docs/)
+- For Mac: Docker For Mac's [Built in Kubernetes](https://www.docker.com/blog/docker-mac-kubernetes/)
 
 .. autofunction:: lumache.get_random_ingredients
 
