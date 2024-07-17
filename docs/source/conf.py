@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Relativistic'
+copyright = '2024, Kadre LLC'
+author = 'Dylan Watt'
 
 release = '0.1'
 version = '0.1.0'
@@ -19,10 +19,10 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
-}
+# intersphinx_mapping = {
+#     'python': ('https://docs.python.org/3/', None),
+#     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+# }
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
