@@ -1,3 +1,7 @@
+from sphinxawesome_theme import ThemeOptions
+from dataclasses import asdict
+from sphinxawesome_theme.postprocess import Icons
+
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
@@ -33,3 +37,14 @@ html_theme = 'sphinxawesome_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+
+
+theme_options = ThemeOptions(
+   # Add your theme options. For example:
+   show_breadcrumbs=True,
+   main_nav_links={"About", "/about"},
+)
+
+html_permalinks_icon = Icons.permalinks_icon
+html_theme_options = asdict(theme_options)
