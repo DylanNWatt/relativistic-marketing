@@ -1,7 +1,7 @@
-Welcome to Lumache's documentations!
+Welcome to Relativistic's documentations!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
+**Relativistic** (/lu'make/) is a Python library for cooks and food lovers
 that creates recipes mixing random ingredients.
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
@@ -19,4 +19,3 @@ Contents
 .. toctree::
 
    usage
-   api

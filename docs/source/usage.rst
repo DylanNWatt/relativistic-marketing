@@ -27,17 +27,17 @@ As recommendations, but not requirements:
 - For Linux: [Minikube](https://minikube.sigs.k8s.io/docs/)
 - For Mac: Docker For Mac's [Built in Kubernetes](https://www.docker.com/blog/docker-mac-kubernetes/)
 
-.. autofunction:: lumache.get_random_ingredients
+.. .. autofunction:: lumache.get_random_ingredients
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+.. The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
+.. or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
+.. will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
+.. .. autoexception:: lumache.InvalidKindError
 
-For example:
+.. For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+.. >>> import lumache
+.. >>> lumache.get_random_ingredients()
+.. ['shells', 'gorgonzola', 'parsley']
 
