@@ -46,5 +46,5 @@ epub_show_urls = 'footnote'
 #    main_nav_links={"About", "/about"},
 # )
 
-# html_permalinks_icon = Icons.permalinks_icon
+html_permalinks_icon = Icons.permalinks_icon
 # html_theme_options = asdict(theme_options)
