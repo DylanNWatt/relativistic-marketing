@@ -3,6 +3,11 @@ Don't Use If
 
 .. _why_not:
 
+
+While Relativistic is a great way to get started with a data stack, there are some cases where it may not be the best fit. It's primarily designed for small to medium sized deployments, of companies with an engineering or IT team that feel self hosting software.
+
+Some reasons you may not want to use Relativistic:
+
 You need a stable interface
 ----------------
 

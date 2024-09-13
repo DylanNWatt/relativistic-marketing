@@ -10,7 +10,7 @@ project = 'Relativistic'
 copyright = '2024, Kadre LLC'
 author = 'Dylan Watt'
 
-release = '0.1'
+# release = '0.1'
 version = '0.0.3'
 
 # -- General configuration
@@ -29,7 +29,7 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
-master_doc = "contents"
+master_doc = "index"
 
 # intersphinx_mapping = {
 #     'python': ('https://docs.python.org/3/', None),
