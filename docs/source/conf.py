@@ -1,6 +1,9 @@
 from sphinxawesome_theme import ThemeOptions
 from dataclasses import asdict
 from sphinxawesome_theme.postprocess import Icons
+import sys
+import os
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # Configuration file for the Sphinx documentation builder.
 
@@ -10,7 +13,7 @@ project = 'Relativistic'
 copyright = '2024, Kadre LLC'
 author = 'Dylan Watt'
 
-# release = '0.1'
+release = '0.0.3'
 version = '0.0.3'
 
 # -- General configuration
@@ -22,6 +25,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser'
+
 ]
 
 source_suffix = {
@@ -42,7 +46,8 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinxawesome_theme'
-
+html_static_path = ['_static']
+html_css_files = ['custom.css']
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
@@ -51,11 +56,14 @@ pygments_style = 'sphinx'
 # theme_options = ThemeOptions(
 #    # Add your theme options. For example:
 #    show_breadcrumbs=True,
-#    main_nav_links={"About", "/about"},
+#    home_page_in_toc=True
 # )
 
 html_permalinks_icon = Icons.permalinks_icon
-# html_theme_options = asdict(theme_options)
+html_theme_options = {
+    "show_breadcrumbs": True,
+    "home_page_in_toc": True
+}
 
 
 import yaml

@@ -1,10 +1,10 @@
 Relativistic Documentation
-========================================
+==========================
 
 **Relativistic** is the fastest way to get a SOC2 compliant open source data stack up and running.
 
 
-Relativistic is a connfiguration tool for deploying open source data tools on your Kubernetes cluster. It allows you to deploy over a dozen of the most popular data tools on Kubernetes in under 5 minutes. From dashboarding to ETLs to DAG schedulers to metrics and more, Relativistic has you covered.
+Relativistic is a configuration tool for deploying open source data tools on your Kubernetes cluster via Terraform. It allows you to deploy over a dozen of the most popular data tools on Kubernetes in under 5 minutes. From dashboarding to ETLs to DAG schedulers to metrics and more, Relativistic has you covered.
 
 Open source data tools often are better than their closed source counterparts. The issue is deploying them in a way that is secure, scalable, maintainable, and compliant. Relativistic comes from the learnings of a data consultancy deploying the same tools to dozens of clients, and how to get running in a day.
 
@@ -72,7 +72,7 @@ Getting Started
 
 .. code-block:: console
 
-   $ gh repo clone kadreio/relativistic
+   $ git clone https://github.com/kadreio/relativistic
    $ cd relativistic/examples/simple_superset
    $ terraform init && terraform apply --auto-approve
    $ open http://localhost:30086
@@ -89,14 +89,20 @@ Contents
 .. toctree::
    :maxdepth: 2
    :caption: Introduction
-
+   
+   Relativistic <self>
    who_is_this_for
-   usage
-   why_not
-   modules
+   Drawbacks <why_not>
 
 .. toctree::
    :maxdepth: 2
-   :caption: Terrraform Documentation
+   :caption: Usage
+
+   installation
+   usage
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Terraform Documentation
 
    terraform/out
